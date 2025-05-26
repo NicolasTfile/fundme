@@ -6,8 +6,8 @@ contract FundMe {
     // Get funds from users
     // Withdraw funds
     // Set a minimum funding value in USD
-    function fund() public {
-        
+    function fund() public payable {
+        require(msg.value > 1e18, "Didn't send enough ETH"); // 1e18 is 1 * 10 ** 18
     }
 
     // function withdraw() public {}
