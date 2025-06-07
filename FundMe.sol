@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-// import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 import {PriceConverter} from "./PriceConverter.sol";
 
 error NotOwner();
@@ -56,6 +56,11 @@ contract FundMe {
         // require(msg.sender == i_owner, "Sender is not owner!");
         if(msg.sender != i_owner) { revert NotOwner(); }
         _;
+    }
+
+    function getVersion() public view returns (uint256) {
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0xfEefF7c3fB57d18C5C6Cdd71e45D2D0b4F9377bF);
+        return priceFeed.version();
     }
 
     receive() external payable {

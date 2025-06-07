@@ -79,6 +79,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getVersion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "i_owner",
 				"outputs": [
 					{
@@ -138,19 +151,19 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x7e2d71db478a218d3831b38893abd17d5e442cb197286037ade238032f38f8e2",
+			"keccak256": "0xe1df5e247c5cb76fe1b2994bfafb66fb546a16850d1cb043e17ee127413a5718",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://96a583da79a1a13a716f69b749d10fa7478503756aa1bae4930df94a2e204f3b",
-				"dweb:/ipfs/QmWM8Xmtn4KbNLY4oemci8JjR3zgwCTJztDdGhwvDkk1fJ"
+				"bzz-raw://1e3ac9593597f69a96f4f8f301efd41492cb9e22c05f533189a6572b4fe48c9e",
+				"dweb:/ipfs/QmemgznyY3wN7QpPH2qypuFg3VxLGG9qfENjXnX9CbN8Rt"
 			]
 		},
 		"PriceConverter.sol": {
-			"keccak256": "0x33cc6c5d4360011c6d1ff24138a33c69f2fa425426b1b6d3851402ca98e2cd2d",
+			"keccak256": "0x20bc1f0ed5666217b80ce9be11d0d4f302ecc47860d0816567f9669c5c6e0251",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://22f7c3b0bd4a3c851e05a243e9ae791841d6b015aa55305a0f1572f7f8aac8fd",
-				"dweb:/ipfs/QmVwr3VhA5ZHsah8MvrdhCZizWSr4J1znecYUubDpBQCFP"
+				"bzz-raw://d62a9d84ee4ee89c3649e02a2e3d2a4a36bbd05864d2b3312da629fb7f20f67a",
+				"dweb:/ipfs/Qma3AwkMZq7ZWj8ncgVgu4772Nmij72Ex2nNjF2iag95mQ"
 			]
 		}
 	},
